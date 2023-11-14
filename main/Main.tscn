@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Menu/Menu.tscn" type="PackedScene" id=3]
+
+[node name="Main" type="Node2D"]
+
+[node name="Menu" parent="." instance=ExtResource( 3 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 588.0
+margin_top = 264.0
+margin_right = 588.0
+margin_bottom = 264.0
