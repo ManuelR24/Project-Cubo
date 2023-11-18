@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/moto.png-dfa882ed0608ffe5e19cce49507e58c8.stex"
+path="res://.import/enemy2d2.png-b333d445062c9d2da22762af1dd3b7f1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Enemy/moto.png"
-dest_files=[ "res://.import/moto.png-dfa882ed0608ffe5e19cce49507e58c8.stex" ]
+source_file="res://Enemy/enemy2d2.png"
+dest_files=[ "res://.import/enemy2d2.png-b333d445062c9d2da22762af1dd3b7f1.stex" ]
 
 [params]
 
@@ -18,7 +18,7 @@ compress/mode=3
 compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/bptc_ldr=0
-compress/normal_map=0
+compress/normal_map=2
 flags/repeat=0
 flags/filter=false
 flags/mipmaps=false
