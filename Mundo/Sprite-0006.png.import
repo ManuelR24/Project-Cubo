@@ -2,25 +2,25 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/vuelta.png-8e6495c1ecd25d2ba973468d44841109.stex"
+path="res://.import/Sprite-0006.png-5499f1bcbe9194cd2a7aeba784b2c43b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Enemy/vuelta.png"
-dest_files=[ "res://.import/vuelta.png-8e6495c1ecd25d2ba973468d44841109.stex" ]
+source_file="res://Mundo/Sprite-0006.png"
+dest_files=[ "res://.import/Sprite-0006.png-5499f1bcbe9194cd2a7aeba784b2c43b.stex" ]
 
 [params]
 
-compress/mode=0
+compress/mode=3
 compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
@@ -31,5 +31,5 @@ process/invert_color=false
 process/normal_map_invert_y=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/vuelta.png-8e6495c1ecd25d2ba973468d44841109.stex"
+path="res://.import/84357.png-a45f15223bd36fc2d7c8cdf5ee2b1c7e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Enemy/vuelta.png"
-dest_files=[ "res://.import/vuelta.png-8e6495c1ecd25d2ba973468d44841109.stex" ]
+source_file="res://Mundo/84357.png"
+dest_files=[ "res://.import/84357.png-a45f15223bd36fc2d7c8cdf5ee2b1c7e.stex" ]
 
 [params]
 

@@ -12,13 +12,13 @@ func _process(_delta):
 	move_and_slide(direccion,arriba)
 
 func mover():
-	if Input.is_action_pressed("ui_right"):
+	if Input.is_action_pressed("Derecha"):
 		direccion.x=+velocidad
-	elif Input.is_action_pressed("ui_left"):
+	elif Input.is_action_pressed("Izquierda "):
 		direccion.x=-velocidad
-	elif Input.is_action_pressed("ui_up"):
+	elif Input.is_action_pressed("Arriba"):
 		direccion.y=-velocidad
-	elif Input.is_action_pressed("ui_down"):
+	elif Input.is_action_pressed("Abajo"):
 		direccion.y=+velocidad
 	else:
 		direccion.x=0
@@ -26,14 +26,14 @@ func mover():
 func animar():
 	if direccion.x>0:
 		$AnimatedSprite.flip_h=false
-		$AnimatedSprite.animation="Run"
+		$AnimatedSprite.animation="derecha"
 	if direccion.x<0:
 		$AnimatedSprite.flip_h=true
-		$AnimatedSprite.animation="Run"
+		$AnimatedSprite.animation="derecha"
 	if direccion.y<0:
 		$AnimatedSprite.flip_v=false
-		$AnimatedSprite.animation="Quieto"
+		$AnimatedSprite.animation="quieto"
 	if direccion.x==0:
-		$AnimatedSprite.play("Quieto")
+		$AnimatedSprite.play("quieto")
 	
 
