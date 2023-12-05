@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://extrasx}/plain-black-background-02fh7564l8qq4m6d.jpg" type="Texture" id=1]
+
+[node name="Background" type="Node2D"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 512.5, 300 )
+scale = Vector2( 0.533854, 0.555556 )
+texture = ExtResource( 1 )

@@ -1,0 +1,69 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Menu/Fuente.tres" type="DynamicFont" id=1]
+[ext_resource path="res://extrasx}/game_over.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Scenes/ParallaxBackground.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scripts/Menu.gd" type="Script" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 60
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 80
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
+
+[node name="Menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 4 )
+
+[node name="BotonV" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -85.0
+margin_top = -82.5
+margin_right = 85.0
+margin_bottom = 82.5
+custom_constants/separation = 10
+alignment = 1
+
+[node name="Jugar2" type="Button" parent="BotonV"]
+margin_right = 170.0
+margin_bottom = 52.0
+custom_colors/font_color_focus = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 0, 0.298039, 1, 1 )
+custom_fonts/font = ExtResource( 1 )
+text = "Play"
+flat = true
+
+[node name="Opciones" type="Button" parent="BotonV"]
+margin_top = 62.0
+margin_right = 170.0
+margin_bottom = 103.0
+custom_colors/font_color_focus = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 1, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Opciones"
+flat = true
+
+[node name="Salir2" type="Button" parent="BotonV"]
+margin_top = 113.0
+margin_right = 170.0
+margin_bottom = 165.0
+custom_colors/font_color_focus = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 1, 0.584314, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Salir"
+flat = true
+
+[node name="ParallaxBackground" parent="." instance=ExtResource( 3 )]
+
+[connection signal="pressed" from="BotonV/Jugar2" to="." method="_on_Jugar2_pressed"]
+[connection signal="pressed" from="BotonV/Salir2" to="." method="_on_Salir2_pressed"]
