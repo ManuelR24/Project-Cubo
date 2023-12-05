@@ -5,7 +5,7 @@
 [sub_resource type="CircleShape2D" id=1]
 radius = 11.3
 
-[node name="Area2D" type="Area2D"]
+[node name="Hit" type="Area2D"]
 position = Vector2( 98, 49 )
 script = ExtResource( 1 )
 

@@ -1,11 +1,15 @@
 extends Area2D
-export var vida : float =3
-export var damage : float =1
+
+#var player
+#func _ready():
+#	player = get_tree().get_nodes_in_group("player")[0]
+#
 func _on_Area2D_body_entered(body):
-	if body.name =="Player":
+	if body.is_in_group("player"):
 		body.dead()
-		get_tree().reload_current_scene()
-		vida = vida-damage
-		print("moriste ", vida)
-		if vida < 0:
-			get_tree().quit()
+		body.queue_free()
+		print("moriste ")
+		get_parent().get_parent().get_parent().aparecer()
+#	elif body.is_in_group("ball"):
+#		_change_direction(false)
+	

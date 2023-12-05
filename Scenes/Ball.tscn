@@ -27,14 +27,14 @@ animations = [ {
 [sub_resource type="CircleShape2D" id=5]
 radius = 11.0255
 
-[node name="Ball" type="KinematicBody2D"]
+[node name="Ball" type="KinematicBody2D" groups=["ball"]]
 scale = Vector2( 2, 2 )
 script = ExtResource( 3 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 114.25, 70.75 )
 frames = SubResource( 4 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -42,6 +42,6 @@ visible = false
 position = Vector2( 114, 70.75 )
 shape = SubResource( 5 )
 
-[node name="Area2D" parent="." instance=ExtResource( 2 )]
+[node name="Hit" parent="." instance=ExtResource( 2 )]
 visible = false
 position = Vector2( 114, 71 )
