@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Juego completado.mp3-26f7fc3701b2a1c2e57cb833b310e9d6.mp3str"
+
+[deps]
+
+source_file="res://Musica y Sonidos/Juego completado.mp3"
+dest_files=[ "res://.import/Juego completado.mp3-26f7fc3701b2a1c2e57cb833b310e9d6.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

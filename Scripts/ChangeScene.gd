@@ -1,11 +1,9 @@
 extends Area2D
 
-var level2 ="res://Scenes/Level2.tscn"
-#var level3 =
-#var level4 =
-#var level5 =
-#var level6 =
+
+#Area 2d que con su funcion permite que si el cuerpo del Player entra en el area 2D
+#este cambiara al siguiente nivel
 func _on_ChangeScene_body_entered(body):
 	if body.is_in_group("player"):
-		get_tree().change_scene(level2)
-
+		Singleton.level_actual = get_parent().name
+		Singleton.siguiente_escena()

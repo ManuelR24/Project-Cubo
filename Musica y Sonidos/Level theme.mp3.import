@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Level theme.mp3-87e9b79b88b1e6d99b9370008db02e21.mp3str"
+
+[deps]
+
+source_file="res://Musica y Sonidos/Level theme.mp3"
+dest_files=[ "res://.import/Level theme.mp3-87e9b79b88b1e6d99b9370008db02e21.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

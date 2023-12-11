@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://extrasx}/plain-black-background-02fh7564l8qq4m6d.jpg" type="Texture" id=1]
+[ext_resource path="res://Assets/plain-black-background-02fh7564l8qq4m6d.jpg" type="Texture" id=1]
 
 [node name="Background" type="Node2D"]
 

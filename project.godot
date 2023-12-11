@@ -10,9 +10,13 @@ config_version=4
 
 [application]
 
-config/name="Version 1.5"
+config/name="Proyecto Final"
 run/main_scene="res://main/Main.tscn"
-config/icon="res://icon.png"
+config/icon="res://Player/icono.png"
+
+[autoload]
+
+Singleton="*res://Scripts/Singleton.gd"
 
 [display]
 

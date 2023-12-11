@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://extrasx}/fnaf_ucn_roster_template_by_calvin1340_deml4u0-pre.jpg" type="Texture" id=1]
+[ext_resource path="res://Assets/fnaf_ucn_roster_template_by_calvin1340_deml4u0-pre.jpg" type="Texture" id=1]
 [ext_resource path="res://Scripts/ParallaxBackground.gd" type="Script" id=2]
 
 [node name="ParallaxBackground" type="ParallaxBackground"]

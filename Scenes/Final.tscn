@@ -1,0 +1,66 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Musica y Sonidos/Juego completado.mp3" type="AudioStream" id=1]
+[ext_resource path="res://Assets/jUEGO TERMINADO.png" type="Texture" id=2]
+[ext_resource path="res://Assets/game_over.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://Scripts/Fin.gd" type="Script" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 120
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 120
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 120
+font_data = ExtResource( 3 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 4 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 512, 300 )
+scale = Vector2( 0.8, 0.833333 )
+texture = ExtResource( 2 )
+
+[node name="MenuButton" type="MenuButton" parent="."]
+margin_right = 1024.0
+margin_bottom = 600.0
+
+[node name="Reiniciar" type="Button" parent="MenuButton"]
+margin_left = 802.0
+margin_top = 506.0
+margin_right = 1024.0
+margin_bottom = 600.0
+custom_fonts/font = SubResource( 1 )
+text = "Reiniciar"
+flat = true
+
+[node name="Menu" type="Button" parent="MenuButton"]
+margin_left = 1.0
+margin_top = 506.0
+margin_right = 246.0
+margin_bottom = 600.0
+custom_fonts/font = SubResource( 2 )
+text = "Menu"
+flat = true
+
+[node name="Salir" type="Button" parent="MenuButton"]
+margin_left = 431.0
+margin_top = 506.0
+margin_right = 654.0
+margin_bottom = 600.0
+custom_fonts/font = SubResource( 3 )
+text = "Salir"
+flat = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+
+[connection signal="pressed" from="MenuButton/Reiniciar" to="." method="_on_Reiniciar_pressed"]
+[connection signal="pressed" from="MenuButton/Menu" to="." method="_on_Menu_pressed"]
+[connection signal="pressed" from="MenuButton/Salir" to="." method="_on_Salir_pressed"]
