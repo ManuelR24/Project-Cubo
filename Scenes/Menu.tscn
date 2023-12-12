@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Assets/Menufuente.tres" type="DynamicFont" id=1]
 [ext_resource path="res://Assets/game_over.ttf" type="DynamicFontData" id=2]
@@ -8,12 +8,6 @@
 
 [sub_resource type="DynamicFont" id=3]
 size = 120
-font_data = ExtResource( 2 )
-
-[sub_resource type="DynamicFont" id=1]
-size = 60
-outline_size = 2
-outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 2 )
 
 [node name="Menu" type="Control"]
@@ -34,29 +28,19 @@ custom_constants/separation = 10
 alignment = 1
 
 [node name="Jugar2" type="Button" parent="BotonV"]
-margin_top = 36.0
+margin_top = 61.0
 margin_right = 170.0
-margin_bottom = 111.0
+margin_bottom = 136.0
 custom_colors/font_color_focus = Color( 1, 1, 1, 1 )
 custom_colors/font_color_hover = Color( 0, 0.298039, 1, 1 )
 custom_fonts/font = SubResource( 3 )
 text = "Play"
 flat = true
 
-[node name="Opciones" type="Button" parent="BotonV"]
-margin_top = 121.0
-margin_right = 170.0
-margin_bottom = 162.0
-custom_colors/font_color_focus = Color( 1, 1, 1, 1 )
-custom_colors/font_color_hover = Color( 1, 0, 0, 1 )
-custom_fonts/font = SubResource( 1 )
-text = "Opciones"
-flat = true
-
 [node name="Salir2" type="Button" parent="BotonV"]
-margin_top = 172.0
+margin_top = 146.0
 margin_right = 170.0
-margin_bottom = 274.0
+margin_bottom = 248.0
 custom_colors/font_color_focus = Color( 1, 1, 1, 1 )
 custom_colors/font_color_hover = Color( 1, 0.584314, 0, 1 )
 custom_fonts/font = ExtResource( 1 )
